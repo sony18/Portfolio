@@ -24,7 +24,7 @@ header {
   font-size: 1.5rem; }
 
 .brand-icon-color {
-  color: #0dc1ee !important; }
+  color: #df274e !important; }
 
 #navbar-nav {
   list-style-type: none;
@@ -94,7 +94,7 @@ header {
       color: #bbb; }
 
 .active {
-  background: #0dc1ee;
+  background: #df274e;
   padding: 5px 10px;
   color: #000 !important; }
 
@@ -207,7 +207,7 @@ header {
   color: #fff;
   transition: all .4s ease-in-out; }
   .btn:hover {
-    background: #0dc1ee;
+    background: #df274e;
     color: #000;
     transition: all .4s ease-in-out; }
 
@@ -298,7 +298,7 @@ p {
   margin: 0 auto .2rem;
   white-space: nowrap;
   overflow: hidden;
-  animation: typeEffect 10s 2s steps(30) infinite, blink 1s infinite; }
+  animation: typeEffect 7s 2s steps(30) infinite, blink 1s infinite; }
 
 #landing h1 {
   position: relative;
