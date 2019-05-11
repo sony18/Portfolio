@@ -1,0 +1,26 @@
+{
+  "name": "profile",
+  "version": "1.0.0",
+  "description": "Responsive Profile Site",
+  "main": "index.js",
+  "homepage": "https://sony18.github.io/Portfolio",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "sonamong",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^2.0.1",
+    "gulp": "^4.0.0",
+    "gulp-cache": "^1.1.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-if": "^2.0.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-useref": "^3.1.6"
+  },
+  "dependencies": {
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-uglify": "^3.0.1"
+  }
+}

@@ -1,0 +1,125 @@
+// max-width: 690px
+@include mediaSm {
+
+    #navbar-nav {
+        display: none;
+    }
+
+    .content-text {
+        padding: 0px 40px;
+        text-align: left;
+    }
+
+    #section-mywork .grid {
+        padding-right: 0;
+    }
+
+    #landing .content-wrap h1 {
+        padding-top: 2em;
+        margin-bottom:2em;
+    }
+    #landing .intro2 {
+        font-size: 1em !important;
+     
+    }
+    #mywork img,.btn-dark {
+        width: 100%;
+        margin:auto;
+    }
+ 
+
+}
+
+// For screen above 690px
+@include mediaMd {
+
+    #menu-icon .icon-bar,
+    .side-nav {
+        display: none;
+    }
+
+    .content-text {
+        max-width: 600px;
+        text-align: left;
+        margin:0 auto;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto; 
+      }
+ 
+
+    #landing .grid {
+        grid-template-columns: 1fr repeat(2, minmax(25em, 1fr) 1fr);
+    }
+
+    #section-aboutme .container.grid,
+    #section-aboutme-a .container.grid {
+        grid-template-columns: .8fr 2fr;
+    }
+
+
+
+    #section-aboutme article,
+    #section-aboutme-a aside {
+        grid-column: 2/3;
+        align-self: flex-start;
+    }
+
+    #section-aboutme figure {
+        grid-column: 1;
+        display: flex;
+        max-width: 150px;
+        min-height: 250px;
+        align-items: center;
+    }
+
+    #section-aboutme-a article {
+        grid-column: 1;
+    }
+
+
+    #section-mywork .grid,
+    #contact .grid,
+       footer .grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    #section-aboutme-a .flex {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #landing .intro {
+        font-size: 1.3em !important;
+        font-weight: 700;
+        letter-spacing: .1em;
+        width: 750px;
+        transition: .2s;
+    }
+
+    #landing .content-wrap {
+        padding-top: 15em;
+    }
+
+    #landing .content-wrap h1 {
+        margin-bottom:2em;
+    }
+
+
+}
+
+// Screen greater than 889px
+@include mediaLg {
+
+    #navbar-nav a {
+        font-size: 1rem;
+
+    }
+
+ 
+
+}

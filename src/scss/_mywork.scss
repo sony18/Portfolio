@@ -1,0 +1,64 @@
+// My work section rules
+#mywork {
+    background: #9e9d9d;
+}
+
+
+#mywork img {
+    width: 80%;
+    border: 2px #fff solid;
+}
+
+#mywork img:hover {
+    border-color: #9e9d9d;
+    transition: all .5s ease;
+}
+
+#mywork .text-secondary {
+    color: #fff;
+}
+
+#mywork .lg-heading {
+    padding-top:3rem;
+    padding-bottom: 1.2rem;
+    font-size: 2.5rem;
+}
+
+#mywork .sm-heading {
+    padding-bottom: 3rem;
+    font-size: 1.1rem;
+    color: #444343;
+}
+
+#mywork .sm-heading span {
+    color: #fff;
+}
+
+#section-mywork {
+    padding: 0em 0em 4em;
+}
+  
+#section-mywork a {
+    display: block;
+}
+
+// btn for my work section
+.btn-dark {
+    display: block;
+    width: 80%;    
+    padding: 8px 10px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 0 0 5px;
+    color: #fff;
+    background: rgba(0, 0, 8, 0.1);
+    @include easeInOut; 
+
+    &:hover {
+      background: #df274e;
+      color: #000;
+       @include easeInOut; 
+
+    }
+  
+  }

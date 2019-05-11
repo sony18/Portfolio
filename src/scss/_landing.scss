@@ -1,0 +1,163 @@
+
+//  Rules for landing page & related elements
+ .btn{
+   display:inline-block;
+   padding:.3rem 2rem .5rem;
+   text-decoration: none;
+   border:1px solid grey;
+   border-radius: 2rem;
+   color:#fff;
+   @include easeInOut;
+   
+   &:hover{
+     background: $brand-color;
+     color:set-text-color($brand-color);
+     @include easeInOut;
+   }
+
+ }
+
+img {
+  display: block;
+  width: 100%;
+  height: auto; 
+}
+
+p {
+  margin: 0;
+  padding: 1em 0; }
+
+  #landing .content-wrap,
+ .card-content {
+  padding: 1em 2.5em 1em;
+  text-align: center; 
+}
+
+#landing {
+  min-height: 100vh;
+  color: #fff;
+  margin-bottom:30px; 
+  clear:both;//test to fix landing page display in ipad
+
+  & .bg-image {
+    position: absolute;
+    background: #6febd6 url("../image/particles.JPG");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+    z-index: -1; }
+}
+
+  #landing .content-wrap {
+    position: absolute;
+    padding-top: 10em;
+    padding-bottom: 1em;
+    background: rgba(0, 0, 8, 0.1);
+    line-height: 1.1;
+    width: 100vw;
+    height: 100vh; 
+
+    & p {
+      padding-bottom: 0;
+      font-weight: 400;
+      font-size: 1.3rem;
+      color: #fff;    
+    
+    }
+
+    & .intro2 {
+      font-size: 1.1rem;
+      margin-top: 0;
+      padding-top: .4rem;
+    letter-spacing: .04rem; 
+  }
+  
+  & h1 {
+    padding-bottom: 1.5em;
+    font-weight: 500; 
+    color:#ddd;
+  }
+  & .social-icon {
+    margin-top: 10px; 
+  
+    
+    & a {
+      color: #fff; 
+    
+     &:hover {
+        color: #0dc1ee;
+        transition: all .5s ease; }
+    }
+
+
+  }
+
+ 
+ & .icon {
+    margin-top: 10px;
+    position: absolute;
+    top: 100px;
+    right: 23px;
+    display: block; 
+       
+    & a {
+      background: #fff;
+      padding: 3px 5px;
+      color: #f03f3f; }
+  
+  }
+
+& .icon-text {
+    position: absolute;
+    top: 140px;
+    right: 23px;
+    color: #fff;
+    border-bottom: 2px #fff solid; }
+    
+  }
+     
+  
+
+
+#landing .intro {
+  visibility: hidden;
+  position: relative;
+  font-weight: 700;
+  width: 373px;
+  letter-spacing: .1em;
+  border-right: 2px solid #fff;
+  padding: 0;
+  margin: 0 auto .2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typeEffect 10s 2s steps(30) infinite, blink 1s infinite; }
+
+
+  
+#landing h1 {
+  position: relative;
+  animation: moveFromTop 2s forwards;
+  transition: all .5s ease; }
+@keyframes paraMove {
+  0% {
+    left: -1000px; }
+  100% {
+    left: 0px; } }
+
+
+@keyframes moveFromTop {
+  0% {
+    top: -200px; }
+  100% {
+    top: 10px; } }
+
+@keyframes blink {
+  50% {
+    border-color: transparent; } }
+
+@keyframes typeEffect {
+  0% {
+    width: 0; } }

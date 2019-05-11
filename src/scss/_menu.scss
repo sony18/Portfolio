@@ -1,0 +1,164 @@
+// Rules for menu/footer & associated elements
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+// Header rules
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  margin-bottom: 0;
+}
+
+// navbar Position relative
+.navbar {
+  background: $nav-bg;
+  height: 70px;
+  position: relative;
+  text-align: center;
+  border-bottom:1px solid grey;
+}
+
+// Brand name
+.brand-name {
+  color: set-text-color($nav-bg);
+  padding: 0 0 0 40px;
+  float: left;
+  font-size: 1.5rem; 
+}
+
+.brand-icon-color {
+  color: $brand-color!important;
+}
+
+// Navbar nav style-bigger screen nav
+#navbar-nav {
+  list-style-type: none;
+  float: right;
+  padding-right:3rem;
+  padding-top: 1rem;
+  @include linear;
+
+  & li {
+    display: inline-block;
+    padding: .5em 1em;
+  }
+
+  & a {
+    text-decoration: none;
+    font-size: .8rem;
+    text-transform: uppercase;
+    color: set-text-color($nav-bg);
+    @include easeInOut;
+  }
+
+  & a:hover {
+    color: $link-hover;
+ 
+  }
+}
+
+
+// Menu icon & icon bar
+#menu-icon {
+  position: absolute;
+  z-index: 4;
+  top: 35px;
+  right: 35px;
+  cursor: pointer;
+  @include linear;
+
+  & .icon-bar {
+    width: 30px;
+    height: 2px;
+    background: set-text-color($nav-bg);
+    margin-bottom: .5rem;
+
+  }
+
+  &.close {
+    transform: rotate(180deg);
+    background: set-text-color($overlay-bg);
+
+    // @include linear;
+
+    .icon-bar {
+
+      // line-1 rotate
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(8px, 9px);
+      }
+
+      // line-2 hide
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      // line-3 rotate
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+      }
+    }
+
+
+  }
+}
+
+// small screen nav style
+.side-nav {
+  visibility: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 30vh;
+  padding: 2em 2em;
+  text-align: center;
+  background: darken($overlay-bg, 4);
+  transform: translate3d(-100%, 0, 0);
+  @include linear;
+
+  &.show {
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
+    width: 100%;
+  }
+
+  & ul li {
+    list-style-type: none;
+    padding: 5px;
+  }
+
+  & ul li a {
+    text-decoration: none;
+    color: set-text-color($overlay-bg);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    @include easeInOut;
+
+    &:hover {
+      color: $link-hover;
+    }
+  }
+
+}
+
+.active{
+  background:$brand-color;
+  padding:5px 10px;
+  color:set-text-color($brand-color)!important;
+}
+#main-footer{
+  background:$overlay-bg;
+  color:set-text-color($overlay-bg);
+  min-height:  50px;
+  width: 100%;
+  padding:10px;
+  
+  & a{
+    color:$primary;
+  }
+}

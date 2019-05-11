@@ -1,0 +1,69 @@
+$bg-color: gradient(green,blue,red);
+$brand-color:#0dc1ee;
+$container-bg:#ebe2e2;
+$nav-color:#fff;
+$nav-bg:#fff;
+$link-hover:#bbb;
+$heading:#818181;
+$subheading:#505050;
+$primary:#0dc1ee;
+$active:green;
+$para:#616161;
+$overlay-bg:rgba(0, 0, 0, 1);
+
+
+@mixin easeInOut {
+    transition: all .4s ease-in-out;
+
+}
+
+@mixin ease {
+    transition: all .5s ease;
+
+}
+@mixin linear {
+    transition: all .5s linear;
+
+}
+
+
+
+// if bg is dark make text lighter vice versa
+// using-Function for setting  text color based on bg-color
+//it pass in bg-color variable in parameter-on function call
+//function is call on main.scss file in color-attributes(to change font-color light or dark)
+@function set-text-color($color) {
+    @if(lightness($color)>40) {
+        @return #000;
+    }
+    @else {
+        @return #fff;
+    }
+}
+
+
+// Media Query mixins
+@mixin mediaSm {
+    @media (max-width: 690px) {
+        @content; // use content instead of css so mixn can be re-used.
+    }
+}
+
+//Media under 768
+@mixin mediaMd {
+    @media (min-width: 690px) {
+        @content; // use content instead of css so mixn can be re-used.        
+    }
+}
+
+@mixin mediaLg {
+    @media (min-width: 889px) {
+        @content; // use content instead of css so mixn can be re-used.        
+    }
+}
+
+@mixin mediaXl {
+    @media (min-width: 1171px) {
+        @content; // use content instead of css so mixn can be re-used.        
+    }
+}

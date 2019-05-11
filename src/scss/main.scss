@@ -1,0 +1,124 @@
+@import 'config';
+@import 'menu';
+@import 'responsive';
+@import 'about';
+@import 'landing';
+@import'mywork';
+@import 'contact';
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6em;
+  font-size: 1em;
+  color: #000;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.hrclass {
+  border-width: .5px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 30px;
+}
+
+.container-banner {
+  height: 50vh;
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+// padding to all main section -for right navigation
+#section-aboutme,
+#mywork,
+#contact {
+  padding-top: 5rem;
+}
+
+#section-aboutme-a,
+#landing,
+#mywork,
+#contact {
+  margin-bottom: 50px;
+}
+
+h1 {
+  color: $heading;
+  font-size: 1.8rem;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: $para;
+
+}
+
+.content {
+  z-index: 1;
+  padding: 40px;
+
+}
+
+
+.box {
+  width: 350px;
+  min-height: auto;
+  border: 1px solid #979595;
+  padding: 15px 0px;
+  margin: 5px auto;
+  border-radius: 5%;
+  opacity: .9;
+}
+
+.box .box-header {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+}
+
+.box .box-body {
+  min-height: auto;
+  width: 100%;
+  padding: 10px 30px;
+}
+
+.box .box-body li {
+  list-style-type: square;
+  text-align: left;
+  margin: auto;
+  font-size: 1rem;
+}
+
+.box:hover {
+  box-shadow: 0 10px 30px;
+  opacity: 1;
+  transition: all .5s ease;
+}
