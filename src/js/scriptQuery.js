@@ -19,6 +19,8 @@ $(document).ready(function () {
 
             console.log('reached dest')
             var scrollTop = $(window).scrollTop();
+            // console.log(scrollTop)
+            // console.log("offset:" + $('#contact').offset().top)
             if (scrollTop > $('#contact').offset().top) {
 
                 upArrow.show();
