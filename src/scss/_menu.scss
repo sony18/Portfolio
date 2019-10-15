@@ -151,12 +151,13 @@ header {
   padding:5px 10px;
   color:set-text-color($brand-color)!important;
 }
+
 #main-footer{
   background:$overlay-bg;
   color:set-text-color($overlay-bg);
-  min-height:  50px;
+  min-height:  auto;
   width: 100%;
-  padding:10px;
+  padding:2rem 1.3rem;
   
   & a{
     color:$primary;
