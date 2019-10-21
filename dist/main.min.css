@@ -107,10 +107,10 @@ header {
   #main-footer a {
     color: #0dc1ee; }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-device-width: 768px) and (max-device-width: 1024px) {
   #landing.bg-image {
     position: absolute;
-    background: #6febd6 url("./image/mobileRed.jpg");
+    background: #6febd6 url("./image/particles.JPG");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
