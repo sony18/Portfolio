@@ -109,9 +109,8 @@ header {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   #landing.bg-image {
-    position: absolute;
-    background: #6febd6 url("../image/mobileRed.jpg");
-    background-position: center center;
+    background: #6febd6 url("./image/particles.JPG");
+    background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -244,7 +243,7 @@ p {
   clear: both; }
   #landing .bg-image {
     position: absolute;
-    background: #6febd6 url("../image/particles.JPG");
+    background: #6febd6 url("./image/particles.JPG");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
