@@ -235,9 +235,6 @@ p {
     background: #6febd6 url("../image/particles.JPG");
     background-position: center center;
     background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
