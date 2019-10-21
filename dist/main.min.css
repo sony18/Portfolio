@@ -109,7 +109,7 @@ header {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   #landing.bg-image {
-    background: #6febd6 url("./image/particles.JPG");
+    background: #6febd6 url("./image/img5.jpeg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
