@@ -109,10 +109,11 @@ header {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   #landing.bg-image {
-    background: #6febd6 url("./image/particles.JPG");
-    background-position: 50% 50%;
+    background: #6febd6 url("../image/particles.JPG");
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: scroll;
     width: 100%;
     height: 100%;
     opacity: 1;
@@ -243,7 +244,7 @@ p {
   clear: both; }
   #landing .bg-image {
     position: absolute;
-    background: #6febd6 url("./image/particles.JPG");
+    background: #6febd6 url("../image/particles.JPG");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
