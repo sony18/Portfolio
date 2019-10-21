@@ -67,3 +67,10 @@ $overlay-bg:rgba(0, 0, 0, 1);
         @content; // use content instead of css so mixn can be re-used.        
     }
 }
+
+@mixin ipad {
+    @media  (min-width : 768px) and (max-width : 1024px)  { 
+
+        @content;
+      }
+}
