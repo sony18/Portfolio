@@ -232,7 +232,7 @@ p {
   clear: both; }
   #landing .bg-image {
     position: absolute;
-    background: #6febd6 url("../image/particles.JPG");
+    background: #6febd6 url("./image/particles.JPG");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
