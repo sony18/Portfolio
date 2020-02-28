@@ -40,7 +40,7 @@ header {
     font-size: .8rem;
     text-transform: uppercase;
     color: #000;
-    transition: all .4s ease-in-out; }
+    transition: all .2s ease-in-out; }
   #navbar-nav a:hover {
     color: #bbb; }
 
@@ -71,10 +71,10 @@ header {
   position: fixed;
   left: 0;
   top: 0;
-  height: 30vh;
-  padding: 2em 2em;
+  min-height: 30vh;
+  padding: 1.5em 2em;
   text-align: center;
-  background: black;
+  background: #0e1a2b;
   transform: translate3d(-100%, 0, 0);
   transition: all .5s linear; }
   .side-nav.show {
@@ -89,17 +89,17 @@ header {
     color: #fff;
     text-transform: uppercase;
     font-size: 1.2rem;
-    transition: all .4s ease-in-out; }
+    transition: all .2s ease-in-out; }
     .side-nav ul li a:hover {
       color: #bbb; }
 
 .active {
-  background: #df274e;
-  padding: 5px 10px;
+  background: silver;
+  padding: 6px 14px;
   color: #000 !important; }
 
 #main-footer {
-  background: black;
+  background: #13243a;
   color: #fff;
   min-height: auto;
   width: 100%;
@@ -109,7 +109,7 @@ header {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   #landing.bg-image {
-    background: #6febd6 url("../image/img5.jpeg");
+    background: #6febd6 url("./image/tulip_hero_ipad.png");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -182,15 +182,22 @@ header {
   #landing .content-wrap {
     padding-top: 15em; }
   #landing .content-wrap h1 {
-    margin-bottom: 2em; } }
+    margin-bottom: 2em;
+    font-size: 2em; } }
 
 @media (min-width: 889px) {
   #navbar-nav a {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  #landing .content-wrap h1 {
+    margin-bottom: 1em;
+    font-size: 3em; } }
 
 #section-aboutme figure img {
   width: 60%;
   margin: auto; }
+
+#section-aboutme p {
+  font-size: 1.1em; }
 
 #section-aboutme figcaption p,
 #section-aboutme figcaption a {
@@ -214,14 +221,15 @@ header {
   display: inline-block;
   padding: .3rem 2rem .5rem;
   text-decoration: none;
-  border: 1px solid grey;
+  font-size: 1.2em;
+  border: .5px solid silver;
   border-radius: 2rem;
   color: #fff;
-  transition: all .4s ease-in-out; }
+  transition: all .2s ease-in-out; }
   .btn:hover {
     background: #df274e;
     color: #000;
-    transition: all .4s ease-in-out; }
+    transition: all .2s ease-in-out; }
 
 img {
   display: block;
@@ -244,7 +252,7 @@ p {
   clear: both; }
   #landing .bg-image {
     position: absolute;
-    background: #6febd6 url("./image/particles.JPG");
+    background: #6febd6 url("./image/tulip_hero1600x900.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -273,8 +281,11 @@ p {
     letter-spacing: .04rem; }
   #landing .content-wrap h1 {
     padding-bottom: 1.5em;
-    font-weight: 500;
-    color: #ddd; }
+    letter-spacing: .2em;
+    line-height: 1.7em;
+    text-shadow: 1px 0 10px;
+    font-weight: 700;
+    color: #333333; }
   #landing .content-wrap .social-icon {
     margin-top: 10px; }
     #landing .content-wrap .social-icon a {
@@ -310,7 +321,7 @@ p {
   margin: 0 auto .2rem;
   white-space: nowrap;
   overflow: hidden;
-  animation: typeEffect 7s 2s steps(30) infinite, blink 1s infinite; }
+  animation: typeEffect 5s 2s steps(30) infinite, blink 1s infinite; }
 
 #landing h1 {
   position: relative;
@@ -354,11 +365,12 @@ p {
 #mywork .lg-heading {
   padding-top: 3rem;
   padding-bottom: 1.2rem;
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  line-height: 1em; }
 
 #mywork .sm-heading {
   padding-bottom: 3rem;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: #444343; }
 
 #mywork .sm-heading span {
@@ -379,11 +391,11 @@ p {
   border-radius: 0 0 5px;
   color: #fff;
   background: rgba(0, 0, 8, 0.1);
-  transition: all .4s ease-in-out; }
+  transition: all .2s ease-in-out; }
   .btn-dark:hover {
     background: #df274e;
     color: #000;
-    transition: all .4s ease-in-out; }
+    transition: all .2s ease-in-out; }
 
 .card-content {
   padding: 0em 1em; }
@@ -395,7 +407,7 @@ p {
   position: relative; }
 
 #upArrow {
-  color: #817f7f;
+  color: #df274e;
   position: fixed;
   bottom: 180px;
   right: 40px; }
@@ -445,7 +457,9 @@ html {
   overflow-x: hidden; }
 
 .hrclass {
-  border-width: .5px; }
+  border-width: .5px;
+  width: 80%;
+  margin: 0 auto; }
 
 img {
   display: block;
@@ -467,7 +481,7 @@ img {
 #section-aboutme,
 #mywork,
 #contact {
-  padding-top: 5rem; }
+  padding-top: 2rem; }
 
 #section-aboutme-a,
 #landing,
@@ -476,14 +490,14 @@ img {
   margin-bottom: 50px; }
 
 h1 {
-  color: #818181;
+  color: #606060;
   font-size: 1.8rem; }
 
 a {
   text-decoration: none; }
 
 p {
-  color: #616161; }
+  color: #505050; }
 
 .content {
   z-index: 1;

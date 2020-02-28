@@ -4,7 +4,8 @@
    display:inline-block;
    padding:.3rem 2rem .5rem;
    text-decoration: none;
-   border:1px solid grey;
+   font-size: 1.2em;
+   border:.5px solid silver;
    border-radius: 2rem;
    color:#fff;
    @include easeInOut;
@@ -14,7 +15,6 @@
      color:set-text-color($brand-color);
      @include easeInOut;
    }
-
  }
 
 img {
@@ -41,7 +41,7 @@ p {
 
   & .bg-image {
     position: absolute;
-    background: #6febd6 url("../image/particles.JPG");
+    background: #6febd6 url("../image/tulip_hero1600x900.JPG");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -77,8 +77,11 @@ p {
   
   & h1 {
     padding-bottom: 1.5em;
-    font-weight: 500; 
-    color:#ddd;
+    letter-spacing: .2em;
+    line-height: 1.7em;
+    text-shadow: 1px 0 10px;
+    font-weight: 700; 
+    color:#333333;
   }
   & .social-icon {
     margin-top: 10px; 
@@ -133,7 +136,7 @@ p {
   margin: 0 auto .2rem;
   white-space: nowrap;
   overflow: hidden;
-  animation: typeEffect 7s 2s steps(30) infinite, blink 1s infinite; }
+  animation: typeEffect 5s 2s steps(30) infinite, blink 1s infinite; }
   
 #landing h1 {
   position: relative;

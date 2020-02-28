@@ -1,7 +1,7 @@
 
 @include ipad{
     #landing.bg-image{
-        background: #6febd6 url("../image/img5.jpeg");
+        background: #6febd6 url("../image/tulip_hero_ipad.png");
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -124,6 +124,7 @@
 
     #landing .content-wrap h1 {
         margin-bottom:2em;
+        font-size: 2em;
     }
 
 
@@ -134,6 +135,11 @@
 
     #navbar-nav a {
         font-size: 1rem;
+    }
+    
+    #landing .content-wrap h1 {
+        margin-bottom:1em;
+        font-size: 3em;
     }
 
 }
