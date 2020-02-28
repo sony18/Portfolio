@@ -103,8 +103,6 @@ header {
         transform: rotate(-45deg) translate(6px, -6px);
       }
     }
-
-
   }
 }
 
@@ -114,8 +112,8 @@ header {
   position: fixed;
   left: 0;
   top: 0;
-  height: 30vh;
-  padding: 2em 2em;
+  min-height: 30vh;
+  padding: 1.5em 2em;
   text-align: center;
   background: darken($overlay-bg, 4);
   transform: translate3d(-100%, 0, 0);
@@ -147,8 +145,8 @@ header {
 }
 
 .active{
-  background:$brand-color;
-  padding:5px 10px;
+  background:silver;
+  padding:6px 14px;
   color:set-text-color($brand-color)!important;
 }
 

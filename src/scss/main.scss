@@ -30,7 +30,9 @@ html {
 }
 
 .hrclass {
-  border-width: .5px;
+  border-width:.5px;
+  width:80%;
+  margin:0 auto;
 }
 
 img {
@@ -57,7 +59,7 @@ img {
 #section-aboutme,
 #mywork,
 #contact {
-  padding-top: 5rem;
+  padding-top: 2rem;
 }
 
 #section-aboutme-a,
