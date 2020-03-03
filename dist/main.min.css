@@ -109,7 +109,7 @@ header {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   #landing.bg-image {
-    background: #6febd6 url("./image/tulip_hero_ipad.png");
+    background: #6febd6 url("./image/tulip_hero_ipad.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -253,7 +253,7 @@ p {
   clear: both; }
   #landing .bg-image {
     position: absolute;
-    background: #6febd6 url("./image/dark3.JPG");
+    background: #6febd6 url("./image/dark3.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
