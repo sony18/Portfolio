@@ -2,17 +2,18 @@
 //  Rules for landing page & related elements
  .btn{
    display:inline-block;
-   padding:.3rem 2rem .5rem;
+   background: $brand-color;
+   padding:.3rem 2rem .6rem;
    text-decoration: none;
    font-size: 1.2em;
-   border:.5px solid silver;
-   border-radius: 2rem;
+   border-radius: 3rem;
    color:#fff;
    @include easeInOut;
    
    &:hover{
-     background: $brand-color;
-     color:set-text-color($brand-color);
+     background: transparent;
+     color:set-text-color(transparent);
+     border:.5px solid silver;
      @include easeInOut;
    }
  }
@@ -41,7 +42,7 @@ p {
 
   & .bg-image {
     position: absolute;
-    background: #6febd6 url("../image/tulip_hero1600x900.JPG");
+    background: #6febd6 url("../image/dark3.JPG");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -77,11 +78,11 @@ p {
   
   & h1 {
     padding-bottom: 1.5em;
-    letter-spacing: .2em;
+    letter-spacing: .3em;
     line-height: 1.7em;
     text-shadow: 1px 0 10px;
     font-weight: 700; 
-    color:#333333;
+    color:silver;
   }
   & .social-icon {
     margin-top: 10px; 

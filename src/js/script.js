@@ -3,8 +3,8 @@ const menuIcon_div = document.querySelector('#menu-icon');
 const sideNav_ul = document.querySelector('.side-nav');
 let intro_p = document.querySelector('#landing .intro');
 var nav_ul = document.querySelector("#navbar-nav");
-var sideNav_link_a = sideNav_ul.getElementsByTagName("a");
-var link_a = nav_ul.getElementsByTagName('a');
+var sideNav_link_a = sideNav_ul.querySelectorAll("a");
+var link_a = nav_ul.querySelectorAll('a');
 
 // Rotating Menu side menu
 menuIcon_div.addEventListener('click', toggleSideNav);
@@ -30,27 +30,24 @@ setTimeout(function () {
     intro_p.style.visibility = 'visible';
 }, 3000)
 
-// adding active class to current link
-console.log(link_a);
-// Event listener for navbar list item
-for (var i = 0; i < link_a.length; i++) {
-    link_a[i].addEventListener('click', function () {
-        // get list of active class
-        var currentLink = document.querySelectorAll('.active');
-        if (currentLink.length > 0) {
-            currentLink[0].className = currentLink[0].className.replace('active', "");
-        }
-        this.className += "active";
-    })
-}
 
-// // adding active class to Side nav list item
-for (var i = 0; i < sideNav_link_a.length; i++) {
-    sideNav_link_a[i].addEventListener('click', function () {
-        var currentSideNavLink = document.querySelectorAll('.active');
-        if (currentSideNavLink.length > 0) {
-            currentSideNavLink[0].className = currentSideNavLink[0].className.replace("active", "");
-        }
-        this.className += "active";
-    });
+// Remove class function
+function removeActiveClass(){
+  return  link_a.forEach(link => link.classList.remove('active'))
 }
+function removeSidenavActiveClass(){
+    return  sideNav_link_a.forEach(link => link.classList.remove('active'))
+  }
+
+function updateActiveClass(e){
+    console.log(e.target)
+    removeActiveClass();
+    removeSidenavActiveClass();
+    e.target.classList.add('active')
+
+}
+// Event listener
+nav_ul.addEventListener('click', updateActiveClass )
+sideNav_ul.addEventListener( 'click', updateActiveClass )
+
+
