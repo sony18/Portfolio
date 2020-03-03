@@ -1,5 +1,5 @@
 $bg-color: gradient(green,blue,red);
-$brand-color:#df274e;
+$brand-color:rgb(238, 68, 85);
 $container-bg:#ebe2e2;
 $nav-color:#fff;
 $nav-bg:#fff;
@@ -7,7 +7,7 @@ $link-hover:#bbb;
 $heading:#606060;
 $subheading:#303030;
 $primary:#0dc1ee;
-$active:green;
+$active:$brand-color;
 $para:#505050;
 $overlay-bg:rgba(19, 36, 58,1);
 
