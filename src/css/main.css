@@ -125,16 +125,24 @@ header {
   .content-text {
     padding: 0px 40px;
     text-align: left; }
-  #section-mywork .grid {
+  #mywork .grid {
     padding-right: 0; }
+  #landing .content-wrap {
+    padding: 6em 0 4em !important; }
   #landing .content-wrap h1 {
     padding-top: 2em;
-    margin-bottom: 2em; }
+    margin-bottom: 1em;
+    font-size: 2.5em; }
   #landing .intro2 {
     font-size: 1em !important; }
   #mywork img, .btn-dark {
     width: 100%;
-    margin: auto; } }
+    margin: auto; }
+  #landing .content-wrap h2 {
+    font-size: 1.5em !important; }
+  #landing .intro {
+    width: 350px !important;
+    border-right: 2px solid #fff !important; } }
 
 @media (min-width: 690px) {
   #menu-icon .icon-bar,
@@ -164,7 +172,7 @@ header {
     align-items: center; }
   #section-aboutme-a article {
     grid-column: 1; }
-  #section-mywork .grid,
+  #mywork .grid,
   #contact .grid,
   footer .grid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
@@ -173,24 +181,26 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly; }
+  #landing .content-wrap h2 {
+    font-size: 2.5em !important; }
   #landing .intro {
-    font-size: 1.3em !important;
-    font-weight: 700;
-    letter-spacing: .1em;
-    width: 750px;
-    transition: .2s; }
+    width: 600px !important; }
   #landing .content-wrap {
-    padding-top: 15em; }
-  #landing.content-wraph1 {
+    padding: 7em 0 !important; }
+  #landing .content-wrap h1 {
     margin-bottom: 2em;
-    font-size: 2em; } }
+    font-size: 3em; } }
 
 @media (min-width: 889px) {
   #navbar-nav a {
     font-size: 1rem; }
+  #landing .content-wrap {
+    padding: 9em 0 !important; }
   #landing .content-wrap h1 {
     margin-bottom: 1em;
-    font-size: 3em; } }
+    font-size: 4em; }
+  #landing .content-wrap h2 {
+    font-size: 3em !important; } }
 
 #section-aboutme figure img {
   width: 60%;
@@ -221,6 +231,7 @@ header {
   display: inline-block;
   background: #ee4455;
   padding: .3rem 2rem .6rem;
+  margin: 1rem 0 .4rem;
   text-decoration: none;
   font-size: 1.2em;
   border-radius: 3rem;
@@ -247,34 +258,33 @@ p {
   text-align: center; }
 
 #landing {
+  width: 100%;
   min-height: 100vh;
-  color: #fff;
-  margin-bottom: 30px;
-  clear: both; }
+  color: #fff; }
   #landing .bg-image {
-    position: absolute;
-    background: #6febd6 url("../image/dark3.JPG");
+    position: relative;
+    background: #6febd6 url("../image/dark3.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    opacity: 1;
     width: 100%;
     height: 100vh;
-    opacity: 1;
-    z-index: -1; }
+    display: grid;
+    justify-content: center;
+    align-items: center; }
 
 #landing .content-wrap {
-  position: absolute;
-  padding-top: 10em;
-  padding-bottom: 1em;
-  background: rgba(0, 0, 8, 0.1);
+  background: rgba(100, 100, 120, 0.2);
   line-height: 1.1;
   width: 100vw;
+  max-width: 100vw;
   height: 100vh; }
   #landing .content-wrap p {
     padding-bottom: 0;
     font-weight: 400;
-    font-size: 1.3rem;
-    color: #fff; }
+    font-size: 1.4rem;
+    color: #e9e6e6; }
   #landing .content-wrap .intro2 {
     font-size: 1.1rem;
     margin-top: 0;
@@ -285,7 +295,7 @@ p {
     letter-spacing: .3em;
     line-height: 1.7em;
     text-shadow: 1px 0 10px;
-    font-weight: 700;
+    font-weight: 700 !important;
     color: silver; }
   #landing .content-wrap .social-icon {
     margin-top: 10px; }
@@ -315,14 +325,17 @@ p {
   visibility: hidden;
   position: relative;
   font-weight: 700;
-  width: 373px;
+  width: 700px;
   letter-spacing: .1em;
-  border-right: 2px solid #fff;
+  border-right: 5px solid #fff;
   padding: 0;
   margin: 0 auto .2rem;
   white-space: nowrap;
   overflow: hidden;
-  animation: typeEffect 5s 2s steps(30) infinite, blink 1s infinite; }
+  animation: typeEffect 5s 3s steps(30) infinite, blink 1s infinite; }
+
+#landing .content-wrap h2 {
+  color: #e9e6e6; }
 
 #landing h1 {
   position: relative;
@@ -377,10 +390,10 @@ p {
 #mywork .sm-heading span {
   color: #fff; }
 
-#section-mywork {
+#mywork {
   padding: 0em 0em 4em; }
 
-#section-mywork a {
+#mywork a {
   display: block; }
 
 .btn-dark {
@@ -416,20 +429,20 @@ p {
 #contact .map {
   padding-top: 3rem; }
 
-#section-contact h1 {
+#contact h1 {
   padding-bottom: 3rem; }
 
-#section-contact .box {
+#contact .box {
   width: 360px;
   padding: 1.5em; }
 
-#section-contact .box:first-child {
+#contact .box:first-child {
   background: #2e8be7; }
 
-#section-contact .box:nth-child(2) {
+#contact .box:nth-child(2) {
   background-image: linear-gradient(to bottom right, rgba(0, 100, 114, 0.5), rgba(0, 215, 114, 0.5)); }
 
-#section-contact .box {
+#contact .box {
   grid-column: span 2; }
 
 #availability {
@@ -456,11 +469,6 @@ body {
 html {
   scroll-behavior: smooth;
   overflow-x: hidden; }
-
-.hrclass {
-  border-width: .5px;
-  width: 80%;
-  margin: 0 auto; }
 
 img {
   display: block;
