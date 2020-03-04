@@ -24,24 +24,24 @@
   padding-top: 3rem;
 }
 
-#section-contact h1 {
+#contact h1 {
   padding-bottom: 3rem;
 }
 
-#section-contact .box {
+#contact .box {
   width: 360px;
   padding: 1.5em;
 }
 
-#section-contact .box:first-child {
+#contact .box:first-child {
   background: #2e8be7;
 }
 
-#section-contact .box:nth-child(2) {
+#contact .box:nth-child(2) {
   background-image: linear-gradient(to bottom right, rgba(0, 100, 114, 0.5), rgba(0, 215, 114, 0.5));
 }
 
-#section-contact .box {
+#contact .box {
   grid-column: span 2;
 }
 

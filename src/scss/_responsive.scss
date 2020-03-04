@@ -27,13 +27,16 @@
         text-align: left;
     }
 
-    #section-mywork .grid {
+    #mywork .grid {
         padding-right: 0;
     }
-
+#landing .content-wrap{
+    padding:6em 0 4em!important;
+}
     #landing .content-wrap h1 {
         padding-top: 2em;
-        margin-bottom:2em;
+        margin-bottom:1em;
+        font-size:2.5em;
     }
     #landing .intro2 {
         font-size: 1em !important;
@@ -43,7 +46,13 @@
         width: 100%;
         margin:auto;
     }
- 
+    #landing .content-wrap h2{
+        font-size: 1.5em!important;
+        }
+     #landing .intro {
+      width: 350px!important;
+       border-right: 2px solid #fff!important;
+     }
 
 }
 
@@ -75,9 +84,6 @@
     #section-aboutme-a .container.grid {
         grid-template-columns: .8fr 2fr;
     }
-
-
-
     #section-aboutme article,
     #section-aboutme-a aside {
         grid-column: 2/3;
@@ -97,7 +103,7 @@
     }
 
 
-    #section-mywork .grid,
+    #mywork .grid,
     #contact .grid,
        footer .grid {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -110,23 +116,22 @@
         justify-content: space-evenly;
     }
 
-    #landing .intro {
-        font-size: 1.3em !important;
-        font-weight: 700;
-        letter-spacing: .1em;
-        width: 750px;
-        transition: .2s;
-    }
+    
+    #landing .content-wrap h2{
+        font-size: 2.5em!important;
+        }
+           #landing .intro {
+        width: 600px!important;
+           }
 
     #landing .content-wrap {
-        padding-top: 15em;
+        padding: 7em 0!important;
     }
 
-    #landing.content-wraph1 {
+    #landing .content-wrap h1 {
         margin-bottom:2em;
-        font-size: 2em;
+        font-size: 3em;
     }
-
 
 }
 
@@ -136,11 +141,17 @@
     #navbar-nav a {
         font-size: 1rem;
     }
+    #landing .content-wrap {
+        padding: 9em 0!important;
+    }
     
     #landing .content-wrap h1 {
         margin-bottom:1em;
-        font-size: 3em;
+        font-size: 4em;
     }
+    #landing .content-wrap h2{
+        font-size: 3em!important;
+        }
 
 }
 
