@@ -32,19 +32,18 @@ setTimeout(function () {
 
 
 // Remove class function
-function removeActiveClass(){
+const removeActiveClass =()=>{
   return  link_a.forEach(link => link.classList.remove('active'))
 }
-function removeSidenavActiveClass(){
+const removeSidenavActiveClass=()=>{
     return  sideNav_link_a.forEach(link => link.classList.remove('active'))
   }
 
-function updateActiveClass(e){
+ const updateActiveClass=(e)=>{
     console.log(e.target)
     removeActiveClass();
     removeSidenavActiveClass();
     e.target.classList.add('active')
-
 }
 // Event listener
 nav_ul.addEventListener('click', updateActiveClass )
