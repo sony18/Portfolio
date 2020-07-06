@@ -141,7 +141,7 @@ header {
   #landing .content-wrap h2 {
     font-size: 1.5em !important; }
   #landing .intro {
-    width: 350px !important;
+    width: 350px;
     border-right: 2px solid #fff !important; } }
 
 @media (min-width: 690px) {
@@ -184,7 +184,7 @@ header {
   #landing .content-wrap h2 {
     font-size: 2.5em !important; }
   #landing .intro {
-    width: 600px !important; }
+    width: 600px; }
   #landing .content-wrap {
     padding: 7em 0 !important; }
   #landing .content-wrap h1 {
@@ -325,14 +325,14 @@ p {
   visibility: hidden;
   position: relative;
   font-weight: 700;
-  width: 700px;
+  max-width: 700px;
   letter-spacing: .1em;
+  margin: 0 auto;
   border-right: 5px solid #fff;
   padding: 0;
-  margin: 0 auto .2rem;
   white-space: nowrap;
   overflow: hidden;
-  animation: typeEffect 5s 3s steps(30) infinite, blink 1s infinite; }
+  animation: typeEffect 5s steps(26, end) infinite, blink 1s infinite; }
 
 #landing .content-wrap h2 {
   color: #e9e6e6; }
@@ -341,12 +341,6 @@ p {
   position: relative;
   animation: moveFromTop 2s forwards;
   transition: all .5s ease; }
-
-@keyframes paraMove {
-  0% {
-    left: -1000px; }
-  100% {
-    left: 0px; } }
 
 @keyframes moveFromTop {
   0% {
@@ -359,8 +353,10 @@ p {
     border-color: transparent; } }
 
 @keyframes typeEffect {
-  0% {
-    width: 0; } }
+  from {
+    width: 0%; }
+  to {
+    width: 100%; } }
 
 #mywork {
   background: #9e9d9d; }

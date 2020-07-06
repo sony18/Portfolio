@@ -1,7 +1,7 @@
 // DOM  element cache
 const menuIcon_div = document.querySelector('#menu-icon');
 const sideNav_ul = document.querySelector('.side-nav');
-let intro_p = document.querySelector('#landing .intro');
+let intro_h2 = document.querySelector('#landing .intro');
 var nav_ul = document.querySelector("#navbar-nav");
 var sideNav_link_a = sideNav_ul.querySelectorAll("a");
 var link_a = nav_ul.querySelectorAll('a');
@@ -27,8 +27,8 @@ function toggleSideNav() {
 
 // script for typing effect-Landing page
 setTimeout(function () {
-    intro_p.style.visibility = 'visible';
-}, 3000)
+    intro_h2.style.visibility = 'visible';
+},100)
 
 
 // Remove class function
