@@ -1,20 +1,4 @@
 
-@include ipad{
-    #landing.bg-image{
-        background: #6febd6 url("../image/tulip_hero_ipad.png");
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        width: 100%;
-        height: 100%;
-        opacity: 1;
-        z-index: -1;    
-    }
-}
-
-
-
 // max-width: 690px
 @include mediaSm {
 
