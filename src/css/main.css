@@ -15,7 +15,8 @@ header {
   height: 70px;
   position: relative;
   text-align: center;
-  border-bottom: 1px solid grey; }
+  border-bottom: 1px solid grey;
+  box-shadow: 1px 0px 10px; }
 
 .brand-name {
   color: #000;
@@ -263,13 +264,13 @@ p {
   color: #fff; }
   #landing .bg-image {
     position: relative;
-    background: #6febd6 url("../image/hero16x9.jpg");
+    background: #09d6b4 url("../image/hero16x9.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 1;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     justify-content: center;
     align-items: center; }

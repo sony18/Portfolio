@@ -42,13 +42,13 @@ p {
 
   & .bg-image {
     position: relative;
-    background: #6febd6 url("../image/hero16x9.jpg");
+    background: #09d6b4 url("../image/hero16x9.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     opacity:1;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display:grid;
     justify-content: center;
     align-items: center;
