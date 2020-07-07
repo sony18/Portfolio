@@ -1,7 +1,6 @@
 $(document).ready(function () {
 
     // // // Scroll top
-    // $(function () {
         var upArrow = $('#upArrow').hide();
         $(window).scroll(function () {
 

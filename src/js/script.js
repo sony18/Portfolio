@@ -8,7 +8,6 @@ var link_a = nav_ul.querySelectorAll('a');
 
 // Rotating Menu side menu
 menuIcon_div.addEventListener('click', toggleSideNav);
-// Set initial state of menu
 let showNav = false;
 // / show menu or close menu toggle function
 function toggleSideNav() {
@@ -25,7 +24,7 @@ function toggleSideNav() {
     }
 }
 
-// script for typing effect-Landing page
+//  typing effect-Landing page
 setTimeout(function () {
     intro_h2.style.visibility = 'visible';
 },100)
