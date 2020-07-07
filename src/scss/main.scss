@@ -27,6 +27,8 @@ body {
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;  
+  overflow-y:scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 img {
@@ -83,7 +85,6 @@ p {
   padding: 40px;
 
 }
-
 
 .box {
   width: 350px;

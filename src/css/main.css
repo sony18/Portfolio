@@ -465,7 +465,9 @@ body {
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch; }
 
 img {
   display: block;
