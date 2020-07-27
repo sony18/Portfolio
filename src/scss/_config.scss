@@ -1,5 +1,5 @@
 $bg-color: gradient(green,blue,red);
-$brand-color:rgb(238, 68, 85);
+$brand-color:#ee4455;
 $container-bg:#ebe2e2;
 $nav-color:#fff;
 $nav-bg:#fff;
@@ -8,8 +8,8 @@ $heading:#606060;
 $subheading:#303030;
 $primary:#0dc1ee;
 $active:$brand-color;
-$para:#505050;
-$overlay-bg:rgba(19, 36, 58,1);
+$para:#444343;
+$overlay-bg:#13243a;
 
 @mixin easeInOut {
     transition: all .2s ease-in-out;
@@ -27,12 +27,9 @@ $overlay-bg:rgba(19, 36, 58,1);
 
 
 
-// if bg is dark make text lighter vice versa
-// using-Function for setting  text color based on bg-color
-//it pass in bg-color variable in parameter-on function call
-//function is call on main.scss file in color-attributes(to change font-color light or dark)
-@function set-text-color($color) {
-    @if(lightness($color)>40) {
+// setting  text color based on bg-color
+@function set-text-color($bgcolor) {
+    @if(lightness($bgcolor)>40) {
         @return #000;
     }
     @else {
