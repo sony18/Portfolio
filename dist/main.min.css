@@ -75,7 +75,7 @@ header {
   min-height: 30vh;
   padding: 1.5em 2em;
   text-align: center;
-  background: #0e1a2b;
+  background: #1e395d;
   transform: translate3d(-100%, 0, 0);
   transition: all .5s linear; }
   .side-nav.show {
@@ -198,6 +198,15 @@ header {
 #section-aboutme p {
   font-size: 1.1em; }
 
+#section-aboutme article a {
+  color: #0000EE; }
+
+#section-aboutme article a:hover {
+  color: #bbb; }
+
+#section-aboutme article a:visited {
+  color: dodgerblue; }
+
 #section-aboutme figcaption p,
 #section-aboutme figcaption a {
   padding: 0;
@@ -229,13 +238,8 @@ header {
   .btn:hover {
     background: transparent;
     color: #fff;
-    border: .5px solid silver;
+    border: .8px solid silver;
     transition: all .2s ease-in-out; }
-
-img {
-  display: block;
-  width: 100%;
-  height: auto; }
 
 p {
   margin: 0;
@@ -252,7 +256,7 @@ p {
   color: #fff; }
   #landing .bg-image {
     position: relative;
-    background: #09d6b4 url("./image/hero16x9.jpg");
+    background: #09d6b4 url("./image/hero_img.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -419,15 +423,8 @@ p {
 
 #contact .box {
   width: 360px;
-  padding: 1.5em; }
-
-#contact .box:first-child {
-  background: #2e8be7; }
-
-#contact .box:nth-child(2) {
-  background-image: linear-gradient(to bottom right, rgba(0, 100, 114, 0.5), rgba(0, 215, 114, 0.5)); }
-
-#contact .box {
+  padding: 1.5em;
+  background-image: linear-gradient(to bottom right, rgba(0, 100, 114, 0.5), rgba(0, 215, 114, 0.5));
   grid-column: span 2; }
 
 #availability {
@@ -491,7 +488,7 @@ a {
   text-decoration: none; }
 
 p {
-  color: #505050; }
+  color: #444343; }
 
 .content {
   z-index: 1;

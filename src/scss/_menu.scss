@@ -116,7 +116,7 @@ header {
   min-height: 30vh;
   padding: 1.5em 2em;
   text-align: center;
-  background: darken($overlay-bg, 4);
+  background: lighten($overlay-bg, 9);
   transform: translate3d(-100%, 0, 0);
   @include linear;
 

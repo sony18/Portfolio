@@ -9,7 +9,7 @@ var link_a = nav_ul.querySelectorAll('a');
 // Rotating Menu side menu
 menuIcon_div.addEventListener('click', toggleSideNav);
 let showNav = false;
-// / show menu or close menu toggle function
+// / show menu & close menu toggle function
 function toggleSideNav() {
     if (!showNav) {
         menuIcon_div.classList.add('close');
@@ -39,10 +39,15 @@ const removeSidenavActiveClass=()=>{
   }
 
  const updateActiveClass=(e)=>{
-    console.log(e.target)
-    removeActiveClass();
+    console.log(e.target.parentElement.parentNode.id)
+    if( e.target.parentElement.parentNode.id === 'navbar-nav'){
+        removeActiveClass();
+        e.target.classList.add('active')
+    }else if (e.target.parentElement.parentNode.id ==='side-nav' ){
+
     removeSidenavActiveClass();
     e.target.classList.add('active')
+    }
 }
 // Event listener
 nav_ul.addEventListener('click', updateActiveClass )

@@ -7,6 +7,15 @@
     #section-aboutme p{
       font-size: 1.1em;      
     }
+    #section-aboutme article a{
+     color: #0000EE;   
+    }
+    #section-aboutme article a:hover{
+      color: $link-hover;   
+     }
+     #section-aboutme article a:visited{
+      color: dodgerblue;   
+     }
 
     #section-aboutme figcaption p,
     #section-aboutme figcaption a {
