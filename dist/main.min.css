@@ -120,7 +120,7 @@ header {
     padding: 6em 0 4em !important; }
   #landing .content-wrap h1 {
     padding-top: 2em;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
     font-size: 2.5em; }
   #landing .intro2 {
     font-size: 1em !important; }
@@ -259,7 +259,7 @@ p {
   color: #fff; }
   #landing .bg-image {
     position: relative;
-    background: #09d6b4 url("./image/hero_img.jpg");
+    background: #09d6b4 url("./image/hero_img16x9.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -294,7 +294,7 @@ p {
     font-weight: 700 !important;
     color: silver; }
   #landing .content-wrap .social-icon {
-    margin-top: 10px; }
+    margin: 10px; }
     #landing .content-wrap .social-icon a {
       color: #fff; }
       #landing .content-wrap .social-icon a:hover {

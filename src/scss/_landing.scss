@@ -37,7 +37,7 @@ p {
 
   & .bg-image {
     position: relative;
-    background: #09d6b4 url("../image/hero_img.jpg");
+    background: #09d6b4 url("../image/hero_img16x9.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -80,7 +80,7 @@ p {
     color:silver;
   }
   & .social-icon {
-    margin-top: 10px; 
+    margin: 10px; 
   
     
     & a {
