@@ -131,7 +131,10 @@ header {
     font-size: 1.5em !important; }
   #landing .intro {
     width: 350px;
-    border-right: 2px solid #fff !important; } }
+    border-right: 2px solid #fff !important; }
+  #mywork .btn-dark,
+  #mywork img {
+    width: 80%; } }
 
 @media (min-width: 690px) {
   #menu-icon .icon-bar,
@@ -355,8 +358,10 @@ p {
   background: #9e9d9d; }
 
 #mywork img {
-  width: 80%;
-  border: 2px #fff solid; }
+  height: 180px;
+  max-width: 100%;
+  border: 2px #fff solid;
+  object-fit: cover; }
 
 #mywork img:hover {
   border-color: #9e9d9d;
@@ -387,7 +392,7 @@ p {
 
 .btn-dark {
   display: block;
-  width: 80%;
+  width: 100%;
   padding: 8px 10px;
   text-decoration: none;
   border: 1px solid #fff;

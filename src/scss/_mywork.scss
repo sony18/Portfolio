@@ -1,13 +1,12 @@
 // My work section rules
 #mywork {
-    background: #9e9d9d;
-   
+    background: #9e9d9d;   
 }
-
-
 #mywork img {
-    width: 80%;
+    height:180px;
+    max-width: 100%;
     border: 2px #fff solid;
+    object-fit: cover;
 }
 
 #mywork img:hover {
@@ -47,7 +46,7 @@
 // btn for my work section
 .btn-dark {
     display: block;
-    width: 80%;    
+    width: 100%;    
     padding: 8px 10px;
     text-decoration: none;
     border: 1px solid #fff;
