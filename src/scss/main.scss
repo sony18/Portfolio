@@ -1,10 +1,10 @@
-@import 'config';
-@import 'menu';
-@import 'responsive';
-@import 'about';
-@import 'landing';
-@import'mywork';
-@import 'contact';
+@import "config";
+@import "menu";
+@import "responsive";
+@import "about";
+@import "landing";
+@import "mywork";
+@import "contact";
 @import url("https://fonts.googleapis.com/css?family=Oswald");
 
 *,
@@ -26,7 +26,7 @@ body {
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;  
+  overflow-x: hidden;
 }
 
 img {
@@ -34,12 +34,10 @@ img {
   width: 100%;
   height: auto;
 }
-
 .grid {
   display: grid;
-  grid-gap: 30px;
+  grid-gap: 20px;
 }
-
 .container-banner {
   height: 50vh;
   position: relative;
@@ -52,21 +50,23 @@ img {
 // padding to all main section -for right navigation
 #section-aboutme,
 #mywork,
-#contact {
-  padding-top: 2rem;
+#contact,
+#certificate {
+  padding-top: 5rem;
 }
 
 #section-aboutme-a,
 #landing,
 #mywork,
-#contact {
+#contact,
+#certificate,
+.map {
   margin-bottom: 50px;
 }
 
 h1 {
   color: $heading;
   font-size: 1.8rem;
-
 }
 
 a {
@@ -75,13 +75,15 @@ a {
 
 p {
   color: $para;
-
 }
 
 .content {
   z-index: 1;
   padding: 40px;
-
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .box {
@@ -89,9 +91,10 @@ p {
   min-height: auto;
   border: 1px solid #979595;
   padding: 15px 0px;
-  margin: 5px auto;
+  margin: 5px 20px;
   border-radius: 5%;
-  opacity: .9;
+  opacity: 0.9;
+  cursor: pointer;
 }
 
 .box .box-header {
@@ -109,11 +112,12 @@ p {
   list-style-type: square;
   text-align: left;
   margin: auto;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.5em;
 }
 
 .box:hover {
   box-shadow: 0 10px 30px;
   opacity: 1;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }

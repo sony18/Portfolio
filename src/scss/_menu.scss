@@ -1,11 +1,3 @@
-// Rules for menu/footer & associated elements
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
 // Header rules
 header {
   position: fixed;
@@ -16,11 +8,11 @@ header {
 
 // navbar Position relative
 .navbar {
+  display: flex;
+  align-items: center;
   background: $nav-bg;
   height: 70px;
-  position: relative;
-  text-align: center;
-  border-bottom:1px solid grey;
+  border-bottom: 1px solid grey;
   box-shadow: 1px 0px 10px;
 }
 
@@ -28,30 +20,30 @@ header {
 .brand-name {
   color: set-text-color($nav-bg);
   padding: 0 0 0 40px;
-  float: left;
-  font-size: 1.5rem; 
+  margin-right: auto;
+  font-size: 1.5rem;
 }
-
+.brand-name a {
+  color: set-text-color($nav-bg);
+}
 .brand-icon-color {
-  color: $brand-color!important;
+  color: $brand-color !important;
 }
 
 // Navbar nav style-bigger screen nav
 #navbar-nav {
   list-style-type: none;
-  float: right;
-  padding-right:3rem;
-  padding-top: 1rem;
+  padding-right: 3rem;
   @include linear;
 
   & li {
     display: inline-block;
-    padding: .5em 1em;
+    padding: 0.5em 1em;
   }
 
   & a {
     text-decoration: none;
-    font-size: .8rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
     color: set-text-color($nav-bg);
     @include easeInOut;
@@ -59,26 +51,21 @@ header {
 
   & a:hover {
     color: $link-hover;
- 
   }
 }
 
-
 // Menu icon & icon bar
 #menu-icon {
-  position: absolute;
   z-index: 4;
-  top: 35px;
-  right: 35px;
+  margin-right: 10px;
   cursor: pointer;
   @include linear;
 
   & .icon-bar {
-    width: 30px;
-    height: 2px;
+    width: 35px;
+    height: 3.5px;
     background: set-text-color($nav-bg);
-    margin-bottom: .5rem;
-
+    margin-bottom: 0.5rem;
   }
 
   &.close {
@@ -88,7 +75,6 @@ header {
     // @include linear;
 
     .icon-bar {
-
       // line-1 rotate
       &:nth-child(1) {
         transform: rotate(45deg) translate(8px, 9px);
@@ -101,7 +87,7 @@ header {
 
       // line-3 rotate
       &:nth-child(3) {
-        transform: rotate(-45deg) translate(6px, -6px);
+        transform: rotate(-45deg) translate(7px, -7px);
       }
     }
   }
@@ -113,7 +99,7 @@ header {
   position: fixed;
   left: 0;
   top: 0;
-  min-height: 30vh;
+  min-height: 20vh;
   padding: 1.5em 2em;
   text-align: center;
   background: lighten($overlay-bg, 9);
@@ -142,23 +128,36 @@ header {
       color: $link-hover;
     }
   }
-
 }
 
-.active{
-  background:$active;
-  padding:6px 14px;
-  color:set-text-color($active)!important;
+.active {
+  background: $active;
+  padding: 6px 14px;
+  color: set-text-color($active) !important;
 }
 
-#main-footer{
-  background:$overlay-bg;
-  color:set-text-color($overlay-bg);
-  min-height:  auto;
+#main-footer {
+  background: linear-gradient(
+    45deg,
+    $overlay-bg,
+    $overlay-bg 20%,
+    rgba(0, 0, 0, 0.6)
+  );
+  color: set-text-color($overlay-bg);
+  min-height: auto;
   width: 100%;
-  padding:2rem 1.3rem;
-  
-  & a{
-    color:$primary;
+  padding: 3rem 1.3rem;
+  font-size: 1.2em;
+  line-height: 1em;
+  & a {
+    color: $nav-color;
+  }
+  & a:hover {
+    color: $link-hover;
+  }
+  & .flex {
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: baseline;
   }
 }

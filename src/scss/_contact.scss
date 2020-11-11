@@ -1,7 +1,6 @@
 // Contact rules
 .card-content {
   padding: 0em 1em;
-
 }
 
 #contact .map {
@@ -18,8 +17,9 @@
   bottom: 180px;
   right: 40px;
 }
-
-
+#contact address {
+  line-height: 1.6em;
+}
 #contact .map {
   padding-top: 3rem;
 }
@@ -31,13 +31,18 @@
 #contact .box {
   width: 360px;
   padding: 1.5em;
-  background-image: linear-gradient(to bottom right, rgba(0, 100, 114, 0.5), rgba(0, 215, 114, 0.5));
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(0, 100, 114, 0.5),
+    rgba(0, 215, 114, 0.5)
+  );
   grid-column: span 2;
 }
 
 #availability {
   list-style-type: none;
-  margin-top:.9rem;
-  margin-bottom:0;
-  padding-bottom:0;
+  margin-top: 0.9rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 1.5;
 }

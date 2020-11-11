@@ -1,72 +1,59 @@
-$bg-color: gradient(green,blue,red);
-$brand-color:#ee4455;
-$container-bg:#ebe2e2;
-$nav-color:#fff;
-$nav-bg:#fff;
-$link-hover:#bbb;
-$heading:#606060;
-$subheading:#303030;
-$primary:#0dc1ee;
-$active:$brand-color;
-$para:#444343;
-$overlay-bg:#13243a;
+$bg-color: gradient(green, blue, red);
+$brand-color: #ee4455;
+$container-bg: #ebe2e2;
+$nav-color: #fff;
+$nav-bg: #fff;
+$link-hover: $brand-color;
+$heading: #606060;
+$subheading: #303030;
+$primary: #0dc1ee;
+$active: $brand-color;
+$para: #333333;
+// $overlay-bg: #13243a;
+$overlay-bg: rgba(8, 49, 44, 0.8);
 
 @mixin easeInOut {
-    transition: all .2s ease-in-out;
-
+  transition: all 0.1s ease-in-out;
 }
 
 @mixin ease {
-    transition: all .5s ease;
-
+  transition: all 0.5s ease;
 }
 @mixin linear {
-    transition: all .5s linear;
-
+  transition: all 0.5s linear;
 }
-
-
 
 // setting  text color based on bg-color
 @function set-text-color($bgcolor) {
-    @if(lightness($bgcolor)>40) {
-        @return #000;
-    }
-    @else {
-        @return #fff;
-    }
+  @if (lightness($bgcolor) >40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
 }
-
 
 // Media Query mixins
 @mixin mediaSm {
-    @media (max-width: 690px) {
-        @content; // use content instead of css so mixn can be re-used.
-    }
+  @media (max-width: 690px) {
+    @content; // use content instead of css so mixn can be re-used.
+  }
 }
 
 //Media under 768
 @mixin mediaMd {
-    @media (min-width: 690px) {
-        @content; // use content instead of css so mixn can be re-used.        
-    }
+  @media (min-width: 690px) {
+    @content; // use content instead of css so mixn can be re-used.
+  }
 }
 
 @mixin mediaLg {
-    @media (min-width: 889px) {
-        @content; // use content instead of css so mixn can be re-used.        
-    }
+  @media (min-width: 889px) {
+    @content; // use content instead of css so mixn can be re-used.
+  }
 }
 
 @mixin mediaXl {
-    @media (min-width: 1171px) {
-        @content; // use content instead of css so mixn can be re-used.        
-    }
-}
-
-@mixin ipad {
-    @media  (min-width : 768px) and (max-width : 1024px)  { 
-
-        @content;
-      }
+  @media (min-width: 1171px) {
+    @content; // use content instead of css so mixn can be re-used.
+  }
 }
