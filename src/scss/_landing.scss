@@ -35,7 +35,7 @@ p {
 
   & .bg-image {
     position: relative;
-    background: #09d6b4 url("../image/hero_img16X9.jpg");
+    background: #09d6b4 url('../images/hero_img16X9.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -82,6 +82,7 @@ p {
 
     & a {
       color: #fff;
+      margin: 0 0.2rem;
 
       &:hover {
         color: #0dc1ee;
@@ -100,6 +101,7 @@ p {
     & a {
       background: #fff;
       padding: 3px 5px;
+      margin: 0 0.2rem;
       color: #f03f3f;
     }
   }

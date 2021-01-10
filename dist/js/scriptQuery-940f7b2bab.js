@@ -1,0 +1,1 @@
+$(document).ready(function(){var o=$("#upArrow").hide();$(window).scroll(function(){console.log("reached dest"),$(window).scrollTop()>$("#contact").offset().top?o.show():o.hide()})});

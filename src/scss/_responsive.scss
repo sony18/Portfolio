@@ -132,7 +132,10 @@
 // Screen greater than 889px
 @include mediaLg {
   #navbar-nav a {
-    font-size: 1rem;
+    font-size: 1.1rem;
+  }
+  .brand-name {
+    font-size: 2rem;
   }
   #landing .content-wrap {
     padding: 9em 0 !important;

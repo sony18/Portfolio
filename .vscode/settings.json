@@ -1,0 +1,15 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.singleQuote": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.associations": {
+    "*.html": "html"
+  },
+  "editor.tabSize": 5,
+  "prettier.jsxSingleQuote": true
+}

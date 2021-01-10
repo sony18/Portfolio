@@ -1,11 +1,11 @@
-@import "config";
-@import "menu";
-@import "responsive";
-@import "about";
-@import "landing";
-@import "mywork";
-@import "contact";
-@import url("https://fonts.googleapis.com/css?family=Oswald");
+@import 'config';
+@import 'menu';
+@import 'responsive';
+@import 'about';
+@import 'landing';
+@import 'mywork';
+@import 'contact';
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 
 *,
 *::before,
@@ -26,6 +26,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
   overflow-x: hidden;
 }
 
