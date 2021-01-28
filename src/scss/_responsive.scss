@@ -12,6 +12,7 @@
   #mywork .grid {
     padding-right: 0;
   }
+
   #landing .content-wrap {
     padding: 6em 0 4em !important;
   }
@@ -103,7 +104,8 @@
 
   #mywork .grid,
   #contact .grid,
-  footer .grid {
+  footer .grid,
+  #certificate .grid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
