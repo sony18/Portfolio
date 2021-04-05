@@ -201,10 +201,6 @@ header {
     font-size: 3em; } }
 
 @media (min-width: 889px) {
-  #navbar-nav a {
-    font-size: 1.1rem; }
-  .brand-name {
-    font-size: 2rem; }
   #landing .bg-image {
     background: #09d6b4 url("../images/hero_img16X9.jpg") !important; }
   #landing .content-wrap {
@@ -214,6 +210,15 @@ header {
     font-size: 4em; }
   #landing .content-wrap h2 {
     font-size: 3em !important; } }
+
+@media (min-width: 1171px) {
+  #certificate img:hover {
+    transform: scale(2.5);
+    transition: all 0.5s ease-in-out; }
+  #navbar-nav a {
+    font-size: 1.1rem; }
+  .brand-name {
+    font-size: 2rem; } }
 
 #section-aboutme img {
   width: 100%;
@@ -269,14 +274,10 @@ header {
   padding: 20px; }
 
 #certificate figure {
-  max-width: 60%;
+  max-width: 50vw;
   margin: 0 auto;
   padding: 40px 0 0;
   cursor: pointer; }
-
-#certificate figure:hover {
-  transform: scale(1.8);
-  transition: all 0.6s ease-in-out; }
 
 .btn {
   display: inline-block;

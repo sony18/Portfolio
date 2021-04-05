@@ -138,12 +138,6 @@
 
 // Screen greater than 889px
 @include mediaLg {
-	#navbar-nav a {
-		font-size: 1.1rem;
-	}
-	.brand-name {
-		font-size: 2rem;
-	}
 	#landing .bg-image {
 		background: #09d6b4 url('../images/hero_img16X9.jpg') !important;
 	}
@@ -157,5 +151,17 @@
 	}
 	#landing .content-wrap h2 {
 		font-size: 3em !important;
+	}
+}
+@include mediaXl {
+	#certificate img:hover {
+		transform: scale(2.5);
+		transition: all 0.5s ease-in-out;
+	}
+	#navbar-nav a {
+		font-size: 1.1rem;
+	}
+	.brand-name {
+		font-size: 2rem;
 	}
 }
