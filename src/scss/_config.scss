@@ -13,47 +13,47 @@ $para: #333333;
 $overlay-bg: rgba(8, 49, 44, 0.8);
 
 @mixin easeInOut {
-  transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
 }
 
 @mixin ease {
-  transition: all 0.5s ease;
+	transition: all 0.5s ease;
 }
 @mixin linear {
-  transition: all 0.5s linear;
+	transition: all 0.5s linear;
 }
 
 // setting  text color based on bg-color
 @function set-text-color($bgcolor) {
-  @if (lightness($bgcolor) >40) {
-    @return #000;
-  } @else {
-    @return #fff;
-  }
+	@if (lightness($bgcolor) >40) {
+		@return #000;
+	} @else {
+		@return #fff;
+	}
 }
 
 // Media Query mixins
 @mixin mediaSm {
-  @media (max-width: 690px) {
-    @content; // use content instead of css so mixn can be re-used.
-  }
+	@media (max-width: 690px) {
+		@content; // use content instead of css so mixn can be re-used.
+	}
 }
 
 //Media under 768
 @mixin mediaMd {
-  @media (min-width: 690px) {
-    @content; // use content instead of css so mixn can be re-used.
-  }
+	@media (min-width: 690px) {
+		@content; // use content instead of css so mixn can be re-used.
+	}
 }
 
 @mixin mediaLg {
-  @media (min-width: 889px) {
-    @content; // use content instead of css so mixn can be re-used.
-  }
+	@media (min-width: 889px) {
+		@content; // use content instead of css so mixn can be re-used.
+	}
 }
 
 @mixin mediaXl {
-  @media (min-width: 1171px) {
-    @content; // use content instead of css so mixn can be re-used.
-  }
+	@media (min-width: 1171px) {
+		@content; // use content instead of css so mixn can be re-used.
+	}
 }

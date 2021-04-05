@@ -118,6 +118,8 @@ header {
     text-align: left; }
   #mywork .grid {
     padding-right: 0; }
+  #landing .bg-image {
+    background: #09d6b4 url("../images/hero_img_mobile.jpg") !important; }
   #landing .content-wrap {
     padding: 6em 0 4em !important; }
   #landing .content-wrap h1 {
@@ -157,6 +159,8 @@ header {
   .container {
     width: 80%;
     margin: 0 auto; }
+  #landing .bg-image {
+    background: #09d6b4 url("../images/hero_img_medium.jpg") !important; }
   #landing .grid {
     grid-template-columns: 1fr repeat(2, minmax(25em, 1fr) 1fr); }
   #section-aboutme .grid,
@@ -201,6 +205,8 @@ header {
     font-size: 1.1rem; }
   .brand-name {
     font-size: 2rem; }
+  #landing .bg-image {
+    background: #09d6b4 url("../images/hero_img16X9.jpg") !important; }
   #landing .content-wrap {
     padding: 9em 0 !important; }
   #landing .content-wrap h1 {
